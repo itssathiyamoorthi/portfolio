@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+ 
+}
+/*-------------------------- Nav bar start -------------------------- */
+
+/* .grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav'
+    'aside aside aside'
+    'article article article'
+    ;
+} */
+
+nav{
+    /* grid-area: 'nav'; */
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    /* font-size: 1.2em; */
+    color: black;
+    position: relative;
+    
+}
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    border-radius: 10px;
+    width: 0px;
+    left: 0;
+    bottom: -5px;
+    background-color: black;
+    transition: 0.5s all ease-in-out;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+nav button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu-line{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+/*-------------------------- Nav bar end -------------------------- */
+
+/*-------------------------- banner  start -------------------------- */
+aside{
+
+    /* grid-area: 'aside'; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+.Home-page{
+    width: 100%;
+    /* background-image: linear-gradient(45deg, rgba(215, 0, 0, 0.668),rgb(0, 191, 255)),url('../image/pexels-lukas-1420709.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+aside .content{
+    width: 600px;
+    padding: 10px 20px;
+
+}
+
+
+aside button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 15px;
+    background-color: black;
+}
+aside button a{
+    text-decoration: none;
+    color: white;
+}
+nav button a{
+    text-decoration: none;
+    color: white;
+}
+aside p{
+   text-align: justify;
+   margin-top: 10px;
+}
+aside h3{
+    margin-top: 10px;
+}
+aside h1{
+    font-size: 34px;
+}
+
+
+/*-------------------------- banner  end -------------------------- */
+
+/*-------------------------- aboutme  start -------------------------- */
+
+article{
+    margin-bottom: 30px;
+    /* grid-area: 'article'; */
+    /* background-color: rgba(205, 205, 205, 0.498); */
+    padding: 10px;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.heading h2{
+    font-size: 25px;
+    position: relative;
+
+}
+.heading h2::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    left: 0;
+    height: 3px;
+    bottom: -5px;
+    background-color: black;
+    transition: 0.5s all ease-in-out;
+}
+.heading h2:hover::before{
+    width: 100%;
+}
+
+.about-img{
+    width: 200px;
+    border-radius: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img img{
+    width: 100%;
+    align-items: center;
+    border-radius: 50px;
+}
+.about-container{
+    width: 100%;
+    padding: 0px 0px 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-content{
+    width: 600px;
+
+    padding: 10px;
+}
+.about-details{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.about-social-icon{
+    width: 100%;
+    margin-top: 20px;
+}
+.about-social-icon img{
+    margin: 5px;
+}
+
+.line{
+    width: 3px;
+    height: 200px;
+    background-color: rgb(29, 29, 29);
+    position: relative;
+    border-radius: 10px;
+}
+
+
+/*-------------------------- aboutme  end -------------------------- */
+
+/*-------------------------- skills  start -------------------------- */
+
+.box{
+    width: 200px;
+    display: inline-block;
+
+}
+.main-container{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.skills-container{
+    width: 100%;
+}
+.skills-box{
+    width:250px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skills-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+.heading h2{
+    font-size: 25px;
+    position: relative;
+
+}
+.heading h2::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    left: 0;
+    height: 3px;
+    bottom: -5px;
+    background-color: black;
+    transition: 0.5s all ease-in-out;
+}
+.heading h2:hover::before{
+    width: 100%;
+}
+.icon-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hh{
+
+   background-color: red;
+}
+
+/*-------------------------- skills  end -------------------------- */
+
+
+
+@media all and (max-width:600px){
+    nav{
+        flex-direction: column;
+        transition: all 0.5s;
+    }
+    nav ul{
+    
+        text-align: center;
+        padding: 0;
+        display: none;
+        transition:transform ;
+        
+    }
+    nav ul li{
+        display: block;
+        transition: all 0.5s;
+        
+    }
+    .logo
+    {
+        align-self: flex-start;
+    }
+    #menulist{
+        
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 5%;
+        
+    } 
+ 
+
+    .showmenu{
+        display: block;
+      
+        
+    }
+}
+
