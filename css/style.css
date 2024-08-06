@@ -35,9 +35,13 @@ nav{
     padding-right: 5%;
 
 }
+nav ul{
+    transition: 0.5s all ease-in-out;
+}
 nav ul li{
     display: inline-block;
     padding: 10px;
+    
 
 }
 nav ul li a{
@@ -71,14 +75,11 @@ nav button{
 }
 .menu{
     cursor: pointer;
+    align-items: center;
+    font-size: 30px;
     display: none;
 }
-.menu-line{
-    width: 20px;
-    height: 3px;
-    background-color: black;
-    margin-bottom: 5px;
-}
+
 
 /*-------------------------- Nav bar end -------------------------- */
 
@@ -295,42 +296,38 @@ article{
 
 @media all and (max-width:600px){
     nav{
+        display: flex;
         flex-direction: column;
-        transition: all 0.5s;
-    }
-    nav ul{
-    
-        text-align: center;
-        padding: 0;
-        display: none;
-        transition:transform ;
-        
+        align-items: center;
+        justify-content: center;
+        position: relative;
     }
     nav ul li{
         display: block;
-        transition: all 0.5s;
-        
+        text-align: center;
+       
     }
-    .logo
-    {
+    nav ul{
+        padding: 0;
+        display: none;
+       
+   
+    }
+    .logo{
         align-self: flex-start;
-    }
-    #menulist{
-        
     }
     .menu{
         display: block;
         position: absolute;
-        top: 25px;
-        right: 5%;
+        top: 6px;
+        right: 27px;
         
-    } 
- 
-
-    .showmenu{
+    }
+    .line{
+        display:none;
+    }
+    .showdata{
         display: block;
-      
-        
     }
 }
 
