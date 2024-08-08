@@ -175,7 +175,7 @@ article{
 }
 
 .about-img{
-    width: 200px;
+    width: 300px;
     border-radius: 20px ;
     display: flex;
     align-items: center;
@@ -293,12 +293,11 @@ article{
 
 #resume{
     width: 100%;
-    min-height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position:relative;
-    padding: 20px;
     margin-bottom: 10px;
 }
 
@@ -307,26 +306,41 @@ article{
     width:80%;
     margin-bottom: 20px;
     margin: 20px;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    top: 120px;
+    top: 120px; */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+
   }
   .tabs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    padding: 10px 10px 5px 10px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.254);
+    
+
+
   }
-  h3 {
+  .tabs h3{
+    width: 300px;
     background-color: #e4e9fd;
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     cursor: pointer;
     font-weight: 600;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 10px;
   }
   .tab-content {
-    background-color: #ffffff;
     padding: 50px 40px;
+    transition: 0.5s;
   }
   .tab-content h4 {
     font-size: 28px;
@@ -340,7 +354,7 @@ article{
     letter-spacing: 0.4px;
     color: #202238;
   }
-  .tab-content div {
+  .tab-content .res-contact {
     display: none;
   }
   .tab-content .active {
@@ -348,7 +362,74 @@ article{
   }
   .tabs .active {
     background-color: #ffffff;
-    color: #4d5bf9;
+    background-color: #4d5bf9;
+  }
+
+
+
+  .bca-container{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  
+
+  }
+  .years{
+    margin-right: 20px;
+    margin-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .years h1{
+    font-size: 17px;
+  }
+  .years h2{
+    font-size: 15px;
+  }
+
+  .percentage{
+    width: 150px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+  .left-line,.right-line{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    
+  }
+  .per-round{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 2px 10px;
+    text-align: center;
+  }
+  .per-round h6{
+    margin: 0;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+  }
+  .clg-details{
+    flex-basis: 50%;
+    font-size: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
   }
 
 /*-------------------------- skills  end -------------------------- */
@@ -389,6 +470,25 @@ article{
     }
     .showdata{
         display: block;
+    }
+
+
+    .bca-container{
+        flex-direction: column;
+    }
+    .percentage{
+        flex-direction: column;
+    }
+    .left-line{
+        width: 3px;
+        height: 30px;
+    }
+     .right-line{
+        width: 3px;
+        height: 30px;
+    }
+    .clg-details{
+       flex-basis: 100%;
     }
 }
 

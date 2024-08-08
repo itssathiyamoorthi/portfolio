@@ -17,7 +17,7 @@ icon.addEventListener('click',()=>{
 
 // resume-----------------------------
 let tabs = document.querySelectorAll(".tabs h3");
-let tabContents = document.querySelectorAll(".tab-content div");
+let tabContents = document.querySelectorAll(".tab-content .res-contact");
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
     tabContents.forEach((content) => {
