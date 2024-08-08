@@ -328,7 +328,7 @@ article{
 
   }
   .tabs h3{
-    width: 300px;
+    width: 80%;
     background-color: #e4e9fd;
     text-align: center;
     padding: 10px 0;
@@ -373,7 +373,16 @@ article{
     padding: 10px;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+   
   
+
+  }
+  .bca-container:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(0.9);
 
   }
   .years{
@@ -431,7 +440,41 @@ article{
     justify-content: center;
     align-items: center;
   }
+.linkedin-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.li-box{
+    width: 13rem;
+    background-color: #000224;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.li-box img{
+    width: 100px;
+    margin-top: 10px;
+}
+.li-body{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.link-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.link-btn a{
+    margin: 5px;
+}
 /*-------------------------- skills  end -------------------------- */
 
 
@@ -452,8 +495,7 @@ article{
     nav ul{
         padding: 0;
         display: none;
-       
-   
+
     }
     .logo{
         align-self: flex-start;
@@ -489,6 +531,19 @@ article{
     }
     .clg-details{
        flex-basis: 100%;
+    }
+    .tabs h3{
+        font-size: 15px;
+    }
+    .clg-details p{
+        text-align:center;
+      
+    }
+    .tab-img{
+        flex-basis: 70%;
+    }
+    .li-box{
+     flex-basis: 90%;   
     }
 }
 
