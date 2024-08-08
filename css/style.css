@@ -175,7 +175,7 @@ article{
 }
 
 .about-img{
-    width: 300px;
+    width: 200px;
     border-radius: 20px ;
     display: flex;
     align-items: center;
@@ -238,16 +238,28 @@ article{
 }
 .skills-container{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon-name img{
+    margin-bottom: 10px;
 }
 .skills-box{
     width:250px;
-    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 30px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .skills-icons{
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -303,7 +315,7 @@ article{
 
 
 .resume_container {
-    width:80%;
+    width:90%;
     margin-bottom: 20px;
     margin: 20px;
     display: flex;
@@ -365,7 +377,18 @@ article{
     background-color: #4d5bf9;
   }
 
-
+.contact-img{
+    width: 290px;
+    border-radius: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-img img{
+width: 100%;
+align-items: center;
+border-radius: 50px;
+}
 
   .bca-container{
     width: 100%;
@@ -542,8 +565,39 @@ article{
     .tab-img{
         flex-basis: 70%;
     }
-    .li-box{
-     flex-basis: 90%;   
-    }
+  .li-box{
+    flex-basis: 40%;
+}
+.li-box img{
+    width: 70px;
+}
+.link-btn{
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+
+}
+.link-btn a{
+    font-size: 13px;
+}
+.skills-box{
+    width: 120px;
+    display: block;
+}
+.skills-icons{
+    flex-basis: 90%;
+}
+.box{
+    width: 90px;
+    display: block;
+
+}
+.icon-name img{
+    width: 40px;
+}
+.icon-name h4{
+    font-size: 14px;
+}
+
 }
 
