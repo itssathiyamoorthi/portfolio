@@ -33,4 +33,17 @@ tabs.forEach((tab, index) => {
 
 // resume end-----------------------------
 
-
+let project_tabs = document.querySelectorAll(".project-tabs h3");
+let project_tabContents = document.querySelectorAll(".project-tab-content .project-res-contact");
+project_tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    projcet_tabContents.forEach((content) => {
+      content.classList.remove("active");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    project_tabContents[index].classList.add("active");
+    project_tabs[index].classList.add("active");
+  });
+});
