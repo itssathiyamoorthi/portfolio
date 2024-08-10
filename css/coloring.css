@@ -1,0 +1,158 @@
+section{
+   background-color: #1e184f;
+}
+/*-------------------- homepage coloring ---------------- */
+nav{
+   
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+}
+.Home-page{
+     background-image: linear-gradient(45deg, #1e184fc7, #1e184fd3),url('../image/pexels-negative-space-169573.jpg');
+}
+.logo h1{
+    color: white;
+}
+.nav ul li {
+    list-style: none;
+    
+}
+.nav ul li a{ 
+    color: white;
+    text-decoration: none;
+}
+.menu i{ 
+    color: white;
+}
+aside .content{
+    background-color: #1e184f54;
+    backdrop-filter: blur(10px);
+    border-radius: 11px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.754);
+}
+.content-details h1{
+color: white;
+}
+.content-details h3{
+   color: white;
+}
+.content-details p{
+    color: white;
+}
+.content-btn{
+
+}
+.content-btn button {
+    background-color: rgba(0, 0, 0, 0.536);
+    backdrop-filter: blur(200px);
+}
+.content-btn button a{
+    color: white;
+}
+
+
+
+
+/* ------------------------about me coloring-------------- */
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading{
+    color: white;
+}
+.heading h2{
+    color: white;
+}
+.line{
+
+}
+.about-content .about-details{
+    /* background-color: rgba(255, 255, 255, 0.214);
+    backdrop-filter: blur(1px); */
+    padding: 20px;
+    /* border-radius: 10px; */
+}
+.about-container{
+    background-color: #1e184f54;
+    backdrop-filter: blur(100px);
+    border-radius: 11px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.273);
+    margin-bottom: 10px;
+}
+.about-details p{
+color: white;
+}
+
+.skills-box{
+    background-color: #3D377D;
+    
+}
+.icon-name{
+    color: white;
+}
+.resume_container{
+    background-color: #3D377D;
+}
+.tabs h3{
+    color: white;
+}
+
+.res-contact h4{
+    color: white;
+}
+.res-contact h5{
+    color: white;
+}
+.about-details address,.about-details h5,.about-social-icon h5{
+    color: white;
+}
+.years h1,.years h2{
+    color: white;
+}
+
+.left-line,.right-line{
+    background-color: white;
+}
+.per-round{
+    background-color: white;
+}
+.per-round h6{
+    color: black;
+}
+.clg-details p{
+    color: white;
+}
+.li-box {
+background: none;
+}
+.li-body{
+    background-color: #0066ff;
+}
+.project-box-main{
+    background-color: #3D377D;
+}
+a{
+color: white;
+text-decoration: none;
+}
+.project-btn a{
+    background-color:  #1e184f;
+    color: white;
+    text-decoration: none;
+}
+.project-details p{
+color: white;
+}
+.project-code a{
+    color: white;
+    background-color: #1e184f;
+}
+.project-code a:hover{
+    color: white;
+}
+.project-details a:hover{
+    color: white;
+}
