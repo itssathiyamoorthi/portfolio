@@ -76,7 +76,7 @@ color: white;
     /* border-radius: 10px; */
 }
 .about-container{
-    background-color: #1e184f54;
+    background-color: #3D377D;;
     backdrop-filter: blur(100px);
     border-radius: 11px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.273);
@@ -106,8 +106,13 @@ color: white;
 .res-contact h5{
     color: white;
 }
-.about-details address,.about-details h5,.about-social-icon h5{
+.con-details address ,.con-details h5,.con-social-icon h5{
     color: white;
+}
+.con-details p{
+    color: white;
+    text-align: justify;
+    font-size: 17px;
 }
 .years h1,.years h2{
     color: white;
