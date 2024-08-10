@@ -599,7 +599,14 @@ border-radius: 50px;
     nav ul li{
         display: block;
         text-align: center;
+        transition: 0.5s;
        
+    }
+    nav ul button{
+        margin-bottom: 20px;
+    }
+    aside{
+        transition: 0.5s;
     }
     .content{
         margin: 10px;
@@ -616,12 +623,13 @@ border-radius: 50px;
     .menu{
         display: block;
         position: absolute;
-   
+        top:1px;
         right: 27px;
         
     }
     .contact-img{
         width: 200px;
+       
     }
     .con-container{
         padding: 10px;
