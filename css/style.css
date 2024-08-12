@@ -78,7 +78,7 @@ nav ul li a::before{
     width: 0px;
     left: 0;
     bottom: -5px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--anchor_line_color);
     transition: 0.5s all ease-in-out;
 }
 nav ul li a:hover::before{
@@ -89,6 +89,14 @@ nav button{
     padding: 10px 20px;
     border-radius: 20px;
     border: none;
+    background-color: var(--button_background_color);
+  
+}
+nav button a{
+    color: var(--heading_text_color);
+}
+nav button a:hover{
+    color: var(--heading_text_color);
 }
 .menu{
     cursor: pointer;
@@ -555,7 +563,7 @@ border-radius: 50px;
     width: 90%;
     height: 200px;
     margin: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     position:relative;
     display: flex;
     align-items: center;
@@ -573,7 +581,7 @@ border-radius: 50px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 .project-btn{
     width: 100%;
