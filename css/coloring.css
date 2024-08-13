@@ -12,9 +12,9 @@ section{
    --anchor_line_color: #0059FA;
 }
  /*-------------------- homepage coloring ---------------- */
- nav{
+ /* nav{
 
- }
+ } */
 
  .custom-shape-divider-bottom-1723531723 {
    position: absolute;
@@ -36,19 +36,20 @@ section{
 .custom-shape-divider-bottom-1723531723 .shape-fill {
    fill: #0077ff;
 }
- .Home-page{
-      /* background-image: linear-gradient(45deg, #1e184fc7, #1e184fd3),url('../image/pexels-negative-space-169573.jpg'); */
- }
- .logo h1{
+ /* .Home-page{
+      /* background-image: linear-gradient(45deg, #1e184fc7, #1e184fd3),url('../image/pexels-negative-space-169573.jpg'); 
+}
+*/
+.logo h1{
      color: var(--heading_text_color);
  }
  nav ul li {
      list-style: none;
      
  }
- nav ul li button a{
+ /* nav ul li button a{
     
- } 
+ }  */
  .nav ul li a{ 
     padding: 10px;
      text-decoration: none;
@@ -69,9 +70,9 @@ section{
  .content-details p{
     color: var(--content_text_color);
  }
- .content-btn{
+ /* .content-btn{
  
- }
+ } */
  .content-btn button {
      background-color: var(--button_background_color)
 
@@ -96,9 +97,9 @@ section{
  .heading h2{
     color: var(--heading_text_color);
  }
- .line{
+ /* .line{
  
- }
+ } */
  .about-content .about-details{
      /* background-color: rgba(255, 255, 255, 0.214);
      backdrop-filter: blur(1px); */

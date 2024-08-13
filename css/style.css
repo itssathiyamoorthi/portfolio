@@ -320,8 +320,6 @@ article{
     justify-content: center;
     align-items: center;
 }
-.hh{
-}
 
 
 #resume{
@@ -391,12 +389,12 @@ article{
   .tab-content .active {
     display: block;
   }
-  .tabs .active {
+  /* .tabs .active {
 
   }
   .tabs .active h4{
 
-  }
+  } */
 .con-container{
     width: 100%;
     display: flex;
@@ -606,8 +604,8 @@ border-radius: 50px;
         justify-content: center;
         position: relative;
     }
-    aside{
-    }
+    /* aside{
+    } */
     nav ul li{
         display: block;
         text-align: center;
