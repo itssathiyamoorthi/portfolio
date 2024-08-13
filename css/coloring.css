@@ -15,6 +15,27 @@ section{
  nav{
 
  }
+
+ .custom-shape-divider-bottom-1723531723 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1723531723 svg {
+   position: relative;
+   display: block;
+   width: calc(150% + 1.3px);
+   height: 130px;
+}
+
+.custom-shape-divider-bottom-1723531723 .shape-fill {
+   fill: #0077ff;
+}
  .Home-page{
       /* background-image: linear-gradient(45deg, #1e184fc7, #1e184fd3),url('../image/pexels-negative-space-169573.jpg'); */
  }
@@ -36,7 +57,7 @@ section{
     color: var(--text_color);
  }
  aside .content{
-    background-color: var(--content-background_color);
+    /* background-color: var(--content-background_color); */
      border-radius: 11px;   
  }
  .content-details h1{
@@ -96,7 +117,7 @@ section{
  }
  
  .skills-box{
-     background-color: var(--content-background_color);
+     /* background-color: var(--content-background_color); */
      padding: 10px;
      
  }
