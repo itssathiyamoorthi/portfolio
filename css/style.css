@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 :root{
-    --main-body-color: rgb(0, 0, 0);
-    --main-box-background-color: rgb(31, 31, 31);
-    
+    --content_text_color: rgba(54, 54, 54, 0.66);
+    --menu-icon: black;
+   --heading_text_color: rgb(255, 255, 255);
+   --background_color: #0C0F14;
+   --text_white_color: black;
+   --content-background_color: #e0e0e0;
+   --button_background_color: #1774FB;
+   --anchor_line_color: #0059FA;background: url('../image/pngwing.com\ \(2\).png');
 }
 
 
@@ -21,6 +27,7 @@ body{
     
  
 }
+
 /*-------------------------- Nav bar start -------------------------- */
 
 /* .grid-container{
@@ -42,9 +49,11 @@ nav{
     justify-content: space-between;
     padding-left: 5%;
     padding-right: 5%;
-    color: white;
     border-radius: 10px;
     
+}
+nav .logo{
+    color: var(--text_white_color);
 }
 nav ul{
     transition: 0.5s all ease-in-out;
@@ -63,12 +72,12 @@ a{
 nav ul li a{
     text-decoration: none;
     /* font-size: 1.2em; */
-    color:white;
+    color:rgb(0, 0, 0);
     position: relative;
     
 }
 nav ul li a:hover{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 nav ul li a::before{
     content: "";
@@ -104,6 +113,9 @@ nav button a:hover{
     font-size: 30px;
     display: none;
 }
+.menu i{
+    color: var(--menu-icon);
+}
 
 
 /*-------------------------- Nav bar end -------------------------- */
@@ -122,9 +134,11 @@ aside{
 }
 .Home-page{
     width: 100%;
+    height: auto;
+    padding: 10px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 aside .content{
     width: 600px;
@@ -156,7 +170,8 @@ aside h3{
     margin-top: 10px;
 }
 aside h1{
-    font-size: 34px;
+    font-size: 54px;
+    font-family: "Lobster", sans-serif;
 }
 
 
@@ -200,7 +215,7 @@ article{
     padding-top: 50px;
 }
 .about-img{
-    width: 200px;
+    width: 300px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -212,7 +227,7 @@ article{
     border-radius: 50px;
 }
 .about-container{
-    width: 90%;
+    width: 100%;
     padding: 20px; 
     display: flex;
     flex-wrap: wrap;
@@ -220,8 +235,9 @@ article{
     align-items: center;
 }
 .about-content{
-    width: 600px;
+    width: 700px;
     padding: 10px;
+    letter-spacing:1px;
 }
 .about-details{
   
@@ -568,8 +584,9 @@ border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-size: contain;
-    background-image: url('../image/pexels-juan-733475.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../image/Screenshot\ \(13\).png');
 
 }
 
@@ -582,6 +599,7 @@ border-radius: 50px;
     justify-content: center;
     flex-direction: column;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .project-btn{
     width: 100%;
