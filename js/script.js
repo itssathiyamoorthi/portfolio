@@ -8,7 +8,6 @@ icon.addEventListener('click',()=>{
    ul.classList.toggle('showdata');
    if(ul.className === 'showdata'){
        document.getElementById('bar').className="fa-solid fa-xmark"
-       console.log("hello")
    }
    else{
         document.getElementById('bar').className="fa-solid fa-bars"
@@ -33,17 +32,17 @@ tabs.forEach((tab, index) => {
 
 // resume end-----------------------------
 
-let project_tabs = document.querySelectorAll(".project-tabs h3");
-let project_tabContents = document.querySelectorAll(".project-tab-content .project-res-contact");
-project_tabs.forEach((tab, index) => {
+let skills_tabs = document.querySelectorAll(".skills-tabs h3");
+let skills_tabContents = document.querySelectorAll(".skills-tab-content .skills-res-contact");
+skills_tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
-    projcet_tabContents.forEach((content) => {
+    skills_tabContents.forEach((content) => {
       content.classList.remove("active");
     });
     tabs.forEach((tab) => {
       tab.classList.remove("active");
     });
-    project_tabContents[index].classList.add("active");
-    project_tabs[index].classList.add("active");
+    skills_tabContents[index].classList.add("active");
+    skills_tabs[index].classList.add("active");
   });
 });
