@@ -130,7 +130,6 @@ aside{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    gap: 15px 30px;
     margin-top: 20px;
 
 }
@@ -143,6 +142,7 @@ aside{
 }
 aside .content{
     width: 600px;
+    background-color: red;
     padding: 10px 20px;
     backdrop-filter: blur(1px);
     border-radius: 10px;
@@ -172,6 +172,13 @@ aside h3{
 aside h1{
     font-size: 54px;
    font-family:  Blacksword;
+}
+.content-img{
+    width: 550px;
+    margin: none;
+}
+.content-img img{
+    width: 100%;
 }
 
 .content-btn button{
@@ -319,13 +326,12 @@ article{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position:relative;
     flex-wrap: wrap;
-
     padding: 20px;
 }
 .resume_container {
-    width:50%;
+    width: 500px;
+    background-color: red;
     display: flex;
     flex-direction: column;
     /* background-color:red; */
@@ -333,6 +339,7 @@ article{
 
   }
   .tabs{
+    width: 100%;
     margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -341,9 +348,10 @@ article{
   }
 
   .skills-tabs{
+    width: 100%;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
   }
@@ -425,7 +433,7 @@ article{
   }
 
   .skills-tab-content {
-    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -461,6 +469,11 @@ article{
   .skills-tab-content .active {
     display: block;
   }
+  .ski {
+    width: 100%;
+  }
+
+
 
 
 
@@ -812,16 +825,23 @@ article{
         margin-top: 20px;
     }
 
-    .content-img img{
+    /* .content-img img{
         width: 500px;
 
-    }
+    } */
+  
     nav ul button{
         margin-bottom: 20px;
     }
     aside{
         transition: 0.5s;
         justify-content: first center;
+    }
+    .skills-tabs{
+    
+    }
+    .skills-tabs h3{
+        font-size: 13px;
     }
     .content{
         bottom:0px;
@@ -830,6 +850,17 @@ article{
         padding: 0;
         
     }
+    /* .resume_container {
+        width: 100%;
+    } */
+    .boxes{
+        width: 100%;
+    }
+    .boxes h3{
+        text-align: center;
+        font-size: 16px;
+    }
+
     .content-btn{
         display: flex;
         align-items: center;
@@ -924,12 +955,15 @@ article{
     font-size: 14px;
 }
 .resume_container{
-   flex-basis: 100%;
    margin: 10px;
 }
-#resume{
-    padding: 0;
+.resume{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .bca-container{
     padding-top: 20px;
 }
