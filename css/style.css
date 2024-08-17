@@ -22,6 +22,7 @@
     }
     section{
         font-family: Poppins;
+        background-color: black;
     }
     /*-------------------------- Home page start -------------------------- */
     nav{
@@ -36,8 +37,8 @@
         
     }
     nav .logo{
-        width: 150px;
-        color: var(--text_white_color);
+        width: 170px;
+        color: white;
         
     }
     nav .logo img{
@@ -63,12 +64,12 @@
     }
     nav ul li a{
         text-decoration: none;
-        color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
         transition: 0.2s;
         position: relative;
     }
     nav ul li a:hover{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     nav ul li a::before{
         content: "";
@@ -78,7 +79,7 @@
         width: 0px;
         left: 0;
         bottom: -5px;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         transition: 0.5s all ease-in-out;
     }
     nav ul li a:hover::before{
@@ -88,13 +89,14 @@
         padding: 10px 20px;
         border-radius: 20px;
         border: none;
-        background-color: var(--button_background_color);
+        background-color: #FDB907;
+
     }
     nav button a{
-        color: var(--heading_text_color);
+       color: rgb(255, 255, 255);
     }
     nav button a:hover{
-        color: var(--heading_text_color);
+        color: white;
     }
     .menu{
         cursor: pointer;
@@ -103,14 +105,16 @@
         display: none;
     }
     .menu i{
-        color: var(--menu-icon);
+        color: white;
     }
-    aside{
+    .banner{
+        width: 100%;
+        height: 600px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: end;
         align-items: center;
-        margin-top: 20px;
+        padding-right: 100px;
+        /* margin-top: 100px; */
     }
     .Home-page{
         width: 100%;
@@ -119,60 +123,61 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        /* background-image: linear-gradient(126deg,#e9cdcb95,#fffdea87),url('../image/background/pexels-pixabay-414548.jpg'); */
-        color: rgb(0, 0, 0);
+        background-image:url('../image/background/background.jpg');
+        color: rgb(255, 255, 255);
+        transition: 0.5s all;
+       
 
     }
-    aside .content{
-        width: 600px;
+
+    .banner .content{
+        width: 500px;
         padding: 10px 20px;
-        backdrop-filter: blur(1px);
         border-radius: 10px;
         /* border: 1px solid rgba(45, 45, 45, 0.58); */
     }
-    aside button{
+    .banner  button{
         padding: 10px 20px;
         border-radius: 20px;
         border: none;
         margin-top: 15px;
     }
-    aside button a{
+    .banner  button a{
         text-decoration: none;
     }
     nav button a{
         text-decoration: none;
     }
-    aside p{
+    .banner  p{
     text-align: justify;
     margin-top: 10px;
     font-size: 17px;
     }
-    aside h3{
+    .banner  h3{
         margin-top: 10px;
     }
-    aside h1{
+    .banner  h1{
         font-size: 40px;
-    font-family:  Blacksword;
     }
-    .content-img{
+    /* .content-img{
         width: 650px;
         margin: none;
     }
     .content-img img{
         width: 100%;
-    }
+    } */
     .content-btn button{
         padding: 10px 20px;
         border-radius: 20px;
         border: none;
-        background-color: var(--button_background_color);
+        background-color: #FDB907;
     
     }
     .content-btn a{
-        color: var(--heading_text_color);
+        color: rgb(255, 255, 255);
     }
     .content-btn a:hover{
-        color: var(--heading_text_color);
+        color:rgb(255, 255, 255)
     }
 
     /*-------------------------- home page  end -------------------------- */
@@ -189,11 +194,15 @@
         align-items: center;
         padding: 50px 0px;
     }
+    i{
+        color: white;
+    }
     .heading h2{
         font-size: 30px;
         position: relative;
         font-family: heading;
         letter-spacing: 1.5px;
+        color: white;
     }
     .heading i{
         margin-right: 10px;
@@ -204,7 +213,7 @@
         width: 0px;
         left: 0;
         height: 3px;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
         bottom: -5px;
         transition: 0.5s all ease-in-out;
     }
@@ -230,12 +239,8 @@
         padding: 20px; 
         display: flex;
         flex-wrap: wrap;
-        /* background: linear-gradient(45deg, rgba(0, 0, 0, 0.151),rgba(0, 0, 0, 0.202)),url('../image/background/5172658.jpg'); */
         background-size: cover;
-        /* background-color: #E9CDCB; */
-        /* background:linear-gradient(126deg,#e9cdcba8,#ffebeaaf); */
-       
-        opacity: 10;
+        background-color: #131213;
         justify-content: space-evenly;
         align-items: center;
     }
@@ -246,13 +251,12 @@
       
     }
     .about-details{
-        color: black;
         width: 100%;
         font-size: 20px;
         margin-top: 20px;
     }
     .about-details p{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     .about-social-icon{
         width: 100%;
@@ -303,36 +307,35 @@
     }
     .skills-tabs h3{
         font-size: 15px;
+        position: absolute;
         transition: 0.5s;
-    }
-
-    .skills-tabs .front:hover{
-        width: 100px;
-        text-align: center;
-        padding: 5px;
         color: white;
-        background-color: rgb(0, 132, 255);
+        
     }
-    .skills-tabs .back:hover{
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        color: white;
-        background-color: rgb(255, 191, 0);
+    .front:hover{
+        color: blue;
     }
-    .skills-tabs .data:hover{
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        color: white;
-        background-color: rgb(1, 180, 193);
+    .back:hover{
+        color: rgb(255, 234, 0);
     }
-    .skills-tabs .tool:hover{
-        width: 100px;
-        text-align: center;
-        padding: 5px;
-        color: white;
-        background-color: rgb(0, 116, 33);
+    .data:hover{
+        color: rgb(0, 127, 181);
+    }
+    .tool:hover{
+        color: rgb(0, 144, 81);
+    }
+    .skills-tabs h3::before{
+        content: "";
+        position: absolute;
+        width: 0px;
+        left: 0;
+        height: 3px;
+        background-color: rgb(255, 255, 255);
+        bottom: -5px;
+        transition: 0.5s all ease-in-out;
+    }
+    .skills-tabs h3:hover::before{
+        width: 100%;
     }
 
     .tabs h3{
@@ -342,10 +345,12 @@
         font-weight: 600;
         transition: 0.5s;
         position: relative;
+        color: white;
 
     }
     .tabs i{
         margin-right: 20px;
+        color: white;
     }
 
     .skills-tabs h3{
@@ -363,7 +368,7 @@
         width: 0px;
         left: 0;
         height: 3px;
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
         bottom: -5px;
         transition: 0.5s all ease-in-out;
     }
@@ -426,12 +431,12 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgb(255, 255, 255) 0px 5px 15px;
         position:relative;
     }
     .card-banner{
         width: 100%;
-        background: url('../image/background/3607424.jpg');
+        background: url('../image/background/3607424.jpg' );
         background-size: cover;
         background-position: center;
         height: 150px;
@@ -456,6 +461,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        color: white;
     }
     .card-detail h1{
         margin: 50px 0px 10px 0px;
@@ -489,11 +495,14 @@
         padding: 8px 10px;
         border: none;
         border-radius: 10px;
+        transition: 0.5s;
+        background-color: #FDB907;
+        position: relative;
 
     }
     .card-btn button a{
         text-decoration: none;
-        color: black;
+        color: rgb(0, 0, 0);
     }
     .skills-main{
         width: 100%;
@@ -503,6 +512,7 @@
     .boxes{
         width: 400px;
         margin: 20px;
+        color: white;
     }
 
     .education-container{
@@ -667,16 +677,17 @@
     /*-------------------------------- Project page start -------------------------- */
 
     @media all and (max-width:600px){
-
+        nav{
+            flex-wrap: wrap;
+        }
         nav ul{
             position: absolute;
             top:0;
             left:0;
             right: 0;
-            width: 100vw;
-            background-color: #ffffff;
+            background-color: #000000;
             transition: 0.5s all;
-            opacity: 0.9;
+            z-index: 1;
         }
         nav ul{
             display: none;
@@ -703,17 +714,19 @@
         nav ul button{
             margin-bottom: 20px;
         }
-        aside{
-            transition: 0.5s;
-            justify-content: first center;
-        }
+        
     
         .skills-tabs h3{
             font-size: 13px;
         }
+        .banner{
+            padding: 10px;
+            justify-content: center;
+            align-items: end;
+        }
         .content{
             bottom:0px;
-            width: 200px;
+            width: 100px;
             margin-bottom: 20px;
             padding: 0;
             
@@ -731,6 +744,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 0;
         }
     .content-details h1{
         font-size: 50px;
@@ -752,11 +766,18 @@
         .logo{
             align-self: flex-start;
         }
+        .Home-page{
+            background: url('../image/background/response.jpg');
+            background-size: contain;
+            background-size: auto;
+        }
         .menu{
             display: block;
-            position: absolute;
+            /* position: absolute; */
             top:8px;
             right: 27px;
+            z-index: 2;
+            color: white;
             
         }
         .front-end-container{
