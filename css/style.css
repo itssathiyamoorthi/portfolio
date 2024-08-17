@@ -735,15 +735,15 @@
             font-size: 13px;
         }
         .banner{
-            padding: 10px;
-            justify-content: center;
-            align-items: end;
+            flex-direction: column;
+            
         }
         .content{
             bottom:0px;
-            width: 100px;
+
             margin-bottom: 20px;
             padding: 0;
+            
             
         }
     
