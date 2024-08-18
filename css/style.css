@@ -24,8 +24,8 @@
     }
     section{
         font-family: Poppins;
-        background-color: #40c9ff;
-        font-family: "DM Serif Text", serif;
+        background: url('../image/background/3607424.jpg');
+  
         letter-spacing: 1px;
     }
     /*-------------------------- Home page start -------------------------- */
@@ -43,7 +43,6 @@
     nav .logo{
         width: 170px;
         color: white;
-        
     }
     nav .logo img{
         width: 100%;
@@ -113,9 +112,8 @@
     }
     .banner{
         width: 100%;
-        height: 500px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content:space-around;
         align-items: center;
         /* margin-top: 100px; */
     }
@@ -126,15 +124,23 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background: linear-gradient(125deg,#000000,#24C1FF);
+        /* background: linear-gradient(125deg,#000000,#24C1FF); */
+        /* background: url('../image/background/3607424.jpg'); */
         color: rgb(255, 255, 255);
         transition: 0.5s all;
        
 
     }
+    .banner-container{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-    .banner .content{
-        width: 500px;
+   .content{
+        width: 600px;
         padding: 10px 20px;
         border-radius: 10px;
         /* border: 1px solid rgba(45, 45, 45, 0.58); */
@@ -144,7 +150,6 @@
         padding: 10px 20px;
         border-radius: 20px;
         border: none;
-        margin-top: 15px;
     }
     .banner  button a{
         text-decoration: none;
@@ -169,12 +174,12 @@
         font-size: 44px;
     }
     .content-img{
-        width: 450px;
-        margin: none;
+        width: 400px;
     }
     .content-img img{
         width: 100%;
     }
+  
     .content-btn button{
         padding: 10px 20px;
         border-radius: 20px;
@@ -204,14 +209,14 @@
         padding: 50px 0px;
     }
     i{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     .heading h2{
         font-size: 30px;
         position: relative;
         font-family: heading;
         letter-spacing: 1.5px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     .heading i{
         margin-right: 10px;
@@ -236,12 +241,13 @@
         width: 250px;
         display: flex;
         align-items: center;
+       
         justify-content: center;
     }
     .about-img img{
         width: 100%;
         align-items: center;
-        border-radius: 50%;
+        border-radius: 10%;
     }
     .about-container{
         width: 100%;
@@ -249,8 +255,9 @@
         display: flex;
         flex-wrap: wrap;
         background: url('../image/background/3607424.jpg' );
-        background-size: cover;
-        background-position: center;
+         box-shadow: #ac004bc3 0px 0px 15px;
+        /* background: linear-gradient(125deg, #ac004bb2,#0184cfbb); */
+        /* background-position: center; */
         justify-content: space-evenly;
         align-items: center;
     }
@@ -319,7 +326,7 @@
         font-size: 15px;
         position: absolute;
         transition: 0.5s;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         
     }
     .front:hover{
@@ -355,12 +362,12 @@
         font-weight: 600;
         transition: 0.5s;
         position: relative;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
 
     }
     .tabs i{
         margin-right: 20px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
 
     .skills-tabs h3{
@@ -441,13 +448,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: linear-gradient(105deg,#00000076,#24C1FF);
-        box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+        background: url('../image/background/3607424.jpg' );
+        background-size: cover;
+        box-shadow: #ac004bc3 0px 5px 15px;
         position:relative;
     }
     .card-banner{
         width: 100%;
-        background: url('../image/background/3607424.jpg' );
+        /* background: url('../image/background/4954141.jpg' ); */
         background-size: cover;
         background-position: center;
         height: 150px;
@@ -472,7 +480,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     .card-detail h1{
         margin: 50px 0px 10px 0px;
@@ -525,7 +533,7 @@
     .boxes{
         width: 400px;
         margin: 20px;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
 
     .education-container{
@@ -546,7 +554,7 @@
         border-radius: 20px;
         transition: 0.5s;
         padding: 10px;
-        color: black;
+        color: rgb(255, 255, 255);
     
     }
     .front-end-container{
@@ -558,7 +566,7 @@
     }
     
     .bca-container:hover{
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: #ac004bc3 0px 5px 15px;
         transform: scale(0.9);
 
 
@@ -588,7 +596,7 @@
     .left-line,.right-line{
         width: 30px;
         height: 3px;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         margin: 10px; 
     }
     .per-round{
@@ -597,26 +605,25 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         border-radius: 50%;
         text-align: center;
     }
     .per-round h6{
         margin: 0;
         font-size: 11px;
-        color: white;
+        color: rgb(0, 0, 0);
         text-align: center;
     }
     .clg-details{
         flex-basis: 50%;
         padding: 10px;
-        font-weight: bold;
         justify-content: center;
         align-items: center;
     }
     .clg-details p{
         text-align:justify;
-        font-size: 12px;
+        font-size: 13px;
         }
 /*-------------------------------- Resume page end -------------------------- */
 /*-------------------------------- Project page start -------------------------- */
@@ -739,12 +746,21 @@
             
         }
         .content{
+            width: 100%;
             bottom:0px;
-
             margin-bottom: 20px;
             padding: 0;
             
             
+        }
+        .banner-container{
+            width: 100%;
+        }
+        .content-img{
+            width: 250px;
+        }
+        .content-details p{
+            padding: 10px;
         }
     
         .boxes{
