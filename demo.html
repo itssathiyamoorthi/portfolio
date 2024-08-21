@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects Quick View</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <section class="projects">
+            <h1>My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="image/bootstrap.png" alt="Project 1" class="project-image">
+                    <h2 class="project-title">Project 1</h2>
+                    <button class="quick-view-btn" data-modal="modal1">Quick View</button>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2" class="project-image">
+                    <h2 class="project-title">Project 2</h2>
+                    <button class="quick-view-btn" data-modal="modal2">Quick View</button>
+                </div>
+                <div class="project">
+                    <img src="project3.jpg" alt="Project 3" class="project-image">
+                    <h2 class="project-title">Project 3</h2>
+                    <button class="quick-view-btn" data-modal="modal3">Quick View</button>
+                </div>
+                <div class="project">
+                    <img src="project4.jpg" alt="Project 4" class="project-image">
+                    <h2 class="project-title">Project 4</h2>
+                    <button class="quick-view-btn" data-modal="modal4">Quick View</button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Modals -->
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img src="image/bootstrap.png" alt="Project 1" class="modal-image">
+                <h2 class="modal-title">Project 1</h2>
+                <p class="modal-description">Details about Project 1...</p>
+            </div>
+        </div>
+    
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img src="project2.jpg" alt="Project 2" class="modal-image">
+                <h2 class="modal-title">Project 2</h2>
+                <p class="modal-description">Details about Project 2...</p>
+            </div>
+        </div>
+    
+        <div class="modal" id="modal3">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img src="project3.jpg" alt="Project 3" class="modal-image">
+                <h2 class="modal-title">Project 3</h2>
+                <p class="modal-description">Details about Project 3...</p>
+            </div>
+        </div>
+    
+        <div class="modal" id="modal4">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img src="project4.jpg" alt="Project 4" class="modal-image">
+                <h2 class="modal-title">Project 4</h2>
+                <p class="modal-description">Details about Project 4...</p>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+
+    <script>
+// Get all open modal buttons
+var btns = document.querySelectorAll(".quick-view-btn");
+// Get all modals
+var modals = document.querySelectorAll(".modal");
+// Get all close buttons
+var closeBtns = document.querySelectorAll(".close-btn");
+
+// Listen for open click
+btns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        var modalId = this.getAttribute("data-modal");
+        var modal = document.getElementById(modalId);
+        modal.style.display = "flex";
+    });
+});
+
+// Listen for close click
+closeBtns.forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        this.closest(".modal").style.display = "none";
+    });
+});
+
+// Listen for outside click
+window.addEventListener("click", function(event) {
+    modals.forEach(function(modal) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+
+    </script>
+</body>
+</html>

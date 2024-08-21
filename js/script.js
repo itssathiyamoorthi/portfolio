@@ -5,9 +5,16 @@ icon.addEventListener('click',()=>{
     ul.classList.toggle('showdata');
     if(ul.className === 'showdata'){
         document.getElementById('bar').className="fa-solid fa-xmark"
+        ul.style.top="0"
+        console.log(ul)
+
+        
     }
     else{
           document.getElementById('bar').className="fa-solid fa-bars"
+          ul.style.top="-450px"
+          console.log(ul)
+      
     }
   })
 
@@ -47,3 +54,5 @@ icon.addEventListener('click',()=>{
   });
 
     // skills tab menu start-----------------------------
+
+

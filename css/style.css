@@ -8,31 +8,33 @@
         box-sizing: border-box;
     } 
 
-    :root{
-        --content_text_color: rgba(54, 54, 54, 0.66);
-        --menu-icon: black;
-    --heading_text_color: rgb(255, 255, 255);
-    --background_color: #0C0F14;
-    --text_white_color: black;
-    --content-background_color: #e0e0e0;
-    --button_background_color: #1774FB;
-    }
+        :root{
+            --content_text_color: rgba(54, 54, 54, 0.66);
+            --menu-icon: black;
+        --heading_text_color: rgb(255, 255, 255);
+        --background_color: #0C0F14;
+        --text_white_color: black;
+        --content-background_color: #e0e0e0;
+        --button_background_color: #1774FB;
+        }
     
     body{
         width: 100%;
         height: 100%;   
+       
     }
     section{
-        font-family: Poppins;
-        background: url('../image/background/3607424.jpg');
-  
         letter-spacing: 1px;
+        background-color: #0F0F0F;
+        
+        
     }
     /*-------------------------- Home page start -------------------------- */
     nav{
         width: 100%;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding-left: 5%;
         padding-top: 10px;
@@ -53,10 +55,11 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: none;
 
     }
     nav ul li{
-        display: inline-block;
+        display: flex;
         padding: 20px;
         transition: 0.5s all;
     }
@@ -124,8 +127,8 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        /* background: linear-gradient(125deg,#000000,#24C1FF); */
-        /* background: url('../image/background/3607424.jpg'); */
+        /* background: linear-gradient(45deg,#310015,#000000); */
+        background: linear-gradient(185deg, rgba(0, 0, 0, 0.612),rgba(0, 0, 0, 0.635)), url('../image/background/pexels-daniel-reche-718241-3721941.jpg');
         color: rgb(255, 255, 255);
         transition: 0.5s all;
        
@@ -254,9 +257,9 @@
         padding: 20px; 
         display: flex;
         flex-wrap: wrap;
-        background: url('../image/background/3607424.jpg' );
-         box-shadow: #ac004bc3 0px 0px 15px;
-        /* background: linear-gradient(125deg, #ac004bb2,#0184cfbb); */
+        /* background: url('../image/background/3607424.jpg' ); */
+        background-color: #0B0B0B;
+         /* box-shadow: #ac004bc3 0px 0px 15px; */
         /* background-position: center; */
         justify-content: space-evenly;
         align-items: center;
@@ -300,6 +303,7 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         padding: 20px;
+        background-color: #0B0B0B;
         /* background:linear-gradient(126deg,#e9cdcba8,#ffebeaaf); */
     }
     .resume_container {
@@ -448,9 +452,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background: url('../image/background/3607424.jpg' );
         background-size: cover;
-        box-shadow: #ac004bc3 0px 5px 15px;
+        background-color: #040404;
+        /* box-shadow: #ffffffc3 0px 5px 15px; */
         position:relative;
     }
     .card-banner{
@@ -625,97 +629,39 @@
         text-align:justify;
         font-size: 13px;
         }
+
+  
 /*-------------------------------- Resume page end -------------------------- */
 /*-------------------------------- Project page start -------------------------- */
 
-    #portfolio{
-        width: 100%;
-    }
-    .project-container{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-
-    }
-    .project-code{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-    .project-code a{
-        padding: 5px 10px;
-        text-decoration: none;
-        border-radius: 10px;
-        
-    }
-    .project-details{
-        width: 100%;
-        padding: 10px;
-        text-align: justify;
-    }
-    .prj-img
-    {
-        width: 90%;
-        height: 200px;
-        margin: 10px;
-        border-radius: 10px;
-        position:relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url('../image/Screenshot\ \(13\).png');
-    }
-    .project-box-main{
-        width: 300px;
-        height: auto;
-        margin: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    .project-btn{
-        width: 100%;
-        display: flex;
-        padding: 10px;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .project-btn a{
-        padding: 5px 10px;
-        text-decoration: none;
-        border-radius: 10px;
-    }
 
 
-    /*-------------------------------- Project page start -------------------------- */
+/*-------------------------------- Project page end -------------------------- */
 
     @media all and (max-width:600px){
         nav{
             flex-wrap: wrap;
-        }
-        nav ul{
-            position: absolute;
-            top:0;
-            left:0;
-            right: 0;
-            background-color: #000000;
-            transition: 0.5s all;
-            z-index: 1;
-        }
-        nav ul{
-            display: none;
-            transition: 0.5s all;
 
         }
+        .Home-page{
+            width: 100%;
+            min-height: 620px;
+        }
+    
+        nav ul{
+            position: absolute;
+            top:-450px;
+            /* height: 450px; */
+            left:0;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            right: 0;
+            background-color: #000000;
+            transition: 0.5s all ease-in-out;
+            z-index: 1;
+        }
+      
         nav ul li{
             width: 100%;
             display: flex;
@@ -731,7 +677,7 @@
             align-items: center;
             margin-top: 20px;
         }
-
+    
     
         nav ul button{
             margin-bottom: 20px;
@@ -760,7 +706,15 @@
             width: 250px;
         }
         .content-details p{
-            padding: 10px;
+            padding: 15px;
+            
+        }
+        .content-details h1{
+            font-size: 40px;
+            text-align: center;
+        }
+        .content-details h3{
+            text-align: center;
         }
     
         .boxes{
@@ -777,13 +731,7 @@
             justify-content: center;
             z-index: 0;
         }
-    .content-details h1{
-        font-size: 50px;
-        text-align: center;
-    }
-    .content-details h3{
-        text-align: center;
-    }
+ 
         .about-me{
             padding: 0;
         }
@@ -797,6 +745,7 @@
         .logo{
             align-self: flex-start;
         }
+        
         .menu{
             display: block;
             /* position: absolute; */
@@ -825,9 +774,7 @@
         .line{
             display:none;
         }
-        .showdata{
-            display: block;
-        }
+       
         .bca-container{
             flex-direction: column;
             padding: 20px;
