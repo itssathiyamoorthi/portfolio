@@ -55,7 +55,6 @@ skills_tabs.forEach((tab, index) => {
 
   // skills tab menu start-----------------------------
 
-
   let project_tabs = document.querySelectorAll(".project-tabs h3");
   let project_tabContents = document.querySelectorAll(".project-tab-content .project-res-contact");
   project_tabs.forEach((tab, index) => {
@@ -72,42 +71,65 @@ skills_tabs.forEach((tab, index) => {
     });
   });
 
-// Project
 
 
-var modal = document.getElementById("mymodal");
+  //project 
 
-var btn1 = document.getElementById("mybtn1");
-var btn2 = document.getElementById("mybtn2");
-var btn3 = document.getElementById("mybtn3");
-var btn4 = document.getElementById("mybtn4");
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
 
-var span = document.getElementsByClassName("close")[0];
 
-btn1.onclick = function(){
 
-modal.style.display = "block";
-}
-btn2.onclick = function(){
 
-modal.style.display = "block";
-}
-btn3.onclick = function(){
 
-modal.style.display = "block";
-}
-btn4.onclick = function(){
 
-modal.style.display = "block";
-}
 
-span.onclick = function(){
-modal.style.display = "none";
+  function updateCarouselImages() {
+    const primaryCarouselItems = document.querySelectorAll('#carouselExampleAutoplaying .carousel-item img');
+    const secondaryCarouselItems = document.querySelectorAll('#carouselExampleSecondary .carousel-item img');
+    const thirdCarouselItems = document.querySelectorAll('#carouselExampleThird .carousel-item img');
 
-}
+    // Swap images between primary carousel and secondary carousel
+    primaryCarouselItems.forEach((img, index) => {
+      if (secondaryCarouselItems[index]) {
+        img.src = secondaryCarouselItems[index].src;
+      }
+    });
 
-window.onclick = function(event){
-if(event.target == modal){
-  modal.style.display="none";
-}
-}
+    // Optionally, restart the primary carousel
+    const primaryCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleAutoplaying'));
+    primaryCarousel.to(0); // Go to the first slide
+  }
+
+  // Function to change images in the third carousel
+  function updateCarouselImagesThird() {
+    const primaryCarouselItems = document.querySelectorAll('#carouselExampleAutoplaying .carousel-item img');
+    const thirdCarouselItems = document.querySelectorAll('#carouselExampleThird .carousel-item img');
+
+    // Swap images between primary carousel and third carousel
+    primaryCarouselItems.forEach((img, index) => {
+      if (thirdCarouselItems[index]) {
+        img.src = thirdCarouselItems[index].src;
+      }
+    });
+
+    // Optionally, restart the primary carousel
+    const primaryCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleAutoplaying'));
+    primaryCarousel.to(0); // Go to the first slide
+  }
+
+  // Add event listener to the button in the third div
+  document.getElementById('changeImageButtonThird').addEventListener('click', updateCarouselImagesThird);
