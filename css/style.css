@@ -911,7 +911,7 @@ align-items: center;
         width: 100%;
     }     */
     .skills-tabs h3{
-        font-size: 13px;
+   
     }
     .menu i{
         font-size: 25px;
@@ -1002,6 +1002,13 @@ align-items: center;
 .custom-shape-divider-bottom-1723531723 svg {
     display: none;
 }
+.project-tabs{
+    width: 100%;
+    margin: 10px;
+}
+.project-tabs h3{
+    font-size: 18px;
+}
 
 
 }
@@ -1021,7 +1028,13 @@ align-items: center;
     }
     .project-tabs{
         width: 90%;
+        margin: 10px;
     }
+    .project-tabs h3{
+        font-size: 18px;
+    }
+    
+  
     nav ul{
         position: absolute;
         top:-450px;
@@ -1059,7 +1072,8 @@ align-items: center;
     
 
     .skills-tabs h3{
-        font-size: 13px;
+        width: 100%;
+        font-size: 1em;
     }
     .banner{
         flex-direction: column;
