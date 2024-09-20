@@ -224,6 +224,7 @@ i{
     font-size: 30px;
     letter-spacing: 1.5px;
     color: rgb(255, 255, 255);
+    position: relative;
 }
 .heading i{
     margin-right: 10px;
@@ -353,8 +354,106 @@ i{
     letter-spacing: 1px;
     color: white;
   }
+  #contact-page{
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .contact-main-page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-container{
+    width: 820px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(36, 36, 36, 0.384);
+    margin-bottom: 30px;
+  }
+ .client-details{
+    width: 470px;
+    height: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
+ }
+ .personal-details{
+    width: 350px;
+    background-color: yellow;
+    background: linear-gradient(45deg,#000000a1,#000000a8),url('../image/contact-us-communication-support-service-assistance-concept.jpg');
+    height: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+    background-size: cover;
 
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+ }
+ .personal-details h3{
+    font-size: 20px;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    
+ }
+ .client{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 80px;
+    margin-bottom: 5px;
+ }
+.send-message-icon{
+    margin-top: 40px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.send-message-icon button{
+    padding: 5px 15px 5px 10px; 
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.personal-info{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+.personal-info p{
+    margin-bottom: 20px;
+}
+.client input{
+    outline: none;
+    border: none;
+    border-radius: 50px;
+   padding: 5px;
+}
+.message textarea{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.client-details label{
+    margin-bottom: 5px;
+}
 /*-------------------------- aboutme  end -------------------------- */
 
 /*-------------------------- Resume page  start -------------------------- */
@@ -1072,8 +1171,21 @@ align-items: center;
 .project-tabs h3{
     font-size: 18px;
 }
-
-
+.personal-details{
+    width: 100%;
+    margin-top: 30px;
+}
+.client{
+    width: 100%;
+}
+.contact-container{
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+.send-message-icon{
+    width: 100%;
+}
 }
 
 @media all and (max-width:600px){
@@ -1086,6 +1198,9 @@ align-items: center;
     .Home-page{
         width: 100%;
         min-height: 800px;
+        background: linear-gradient(185deg, rgba(0, 0, 0, 0.612),rgba(0, 0, 0, 0.635)), url('../image/background/pexels-daniel-reche-718241-3721941.jpg');
+        background-attachment: fixed;
+        background-size: cover;
     }
     .project-container{
        margin: 0;
@@ -1313,7 +1428,21 @@ align-items: center;
 .custom-shape-divider-bottom-1723531723 svg {
     display: none;
 }
-
+.personal-details{
+    width: 100%;
+    margin-top: 30px;
+}
+.client{
+    width: 100%;
+}
+.contact-container{
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+.send-message-icon{
+    width: 100%;
+}
 
 }
 

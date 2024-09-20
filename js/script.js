@@ -82,7 +82,7 @@ const courses = [
   { course: "HTML", percent: 99, color: "#f9ca24" },
   { course: "CSS", percent: 65, color: "#78e08f" },
   { course: "JavaScript", percent: 35, color: "#c56cf0" },
-  // { course: "Bootstrap", percent: 85, color: "#badc58" },
+  // { course: "Bootstrap", percent: 85, color: "#badc58" },?
 ];
 
 courses.forEach((course) => {
