@@ -125,7 +125,6 @@ nav button a:hover{
     transition: 0.5s all;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: ;
     background-size: cover;
     /* background: linear-gradient(45deg,#310015,#000000); */
     background: linear-gradient(185deg, rgba(0, 0, 0, 0.612),rgba(0, 0, 0, 0.635)), url('../image/background/pexels-daniel-reche-718241-3721941.jpg');
