@@ -98,7 +98,7 @@ nav button a:hover{
     display: none;
 }
 .menu i{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .banner{
     width: 100%;
@@ -914,7 +914,9 @@ align-items: center;
         margin-bottom: 20px;
     }
     
-
+    .about-container{
+        padding-top: 0px;
+    }
     .skills-tabs h3{
         font-size: 13px;
     }
@@ -1026,6 +1028,10 @@ align-items: center;
     .education-container{
         width: 100%;
     }
+   
+    .education-container h1{
+            padding-bottom: 10px;
+        }
     .years{
         margin: 0;
     }
@@ -1079,12 +1085,17 @@ align-items: center;
 .resume_container{
     margin: 10px;
     width: 100%;
+    padding: 0px;
 }
 .resume{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.resume_container h1{
+    margin: 0px;
+    padding-bottom: 10px;
 }
 .res-contact{
     width: 80%;
@@ -1133,7 +1144,7 @@ align-items: center;
     }
     .Home-page{
         width: 100%;
-        min-height: 800px;
+        min-height: 750px;
         background: linear-gradient(185deg, rgba(0, 0, 0, 0.612),rgba(0, 0, 0, 0.635)), url('../image/background/pexels-daniel-reche-718241-3721941.jpg');
         background-attachment: fixed;
         background-size: cover;
@@ -1289,6 +1300,9 @@ align-items: center;
     .education-container{
         width: 100%;
     }
+    .education-container h1{
+        padding-bottom: 10px;
+    }
     .years{
         margin: 0;
     }
@@ -1348,6 +1362,10 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.resume_container h1{
+    margin: 0px;
+    padding-bottom: 10px;
 }
 .res-contact{
     width: 80%;
