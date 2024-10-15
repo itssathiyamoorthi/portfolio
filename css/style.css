@@ -24,9 +24,11 @@ nav{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 5%;
-    padding-top: 20px;
     padding-right: 5%;
     border-radius: 10px;
+    position: fixed;
+    z-index: 1;
+    background-color: #000000;
     
 }
 nav .logo{
@@ -49,6 +51,7 @@ nav ul li{
     display: flex;
     padding: 20px;
     transition: 0.5s all;
+    
 }
 
 a{
@@ -103,7 +106,8 @@ nav button a:hover{
 .banner{
     width: 100%;
     display: flex;
-    
+    position: relative;
+    top: 100px;
     justify-content:space-around;
     align-items: center;
     /* margin-top: 100px; */
@@ -867,6 +871,8 @@ align-items: center;
 @media all and (max-width:400px){
     nav{
         margin-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .Home-page{
         width: 100%;
@@ -898,7 +904,7 @@ align-items: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         transition: 0.5s;
     }
     .ul-btn{
@@ -1139,7 +1145,8 @@ align-items: center;
     nav{
         flex-wrap: wrap;
         margin-bottom: 20px;
-        /* padding-top: 10px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
 
     }
     .Home-page{
@@ -1181,7 +1188,7 @@ align-items: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        /* margin-top: 20px; */
         transition: 0.5s;
     }
     .ul-btn{
